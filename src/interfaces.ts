@@ -1,20 +1,20 @@
-interface Person {
-  name: string;
-  age: number;
+// interface Person {
+//   name: string;
+//   age: number;
 
-  greet(message: string): void;
-}
+//   greet(message: string): void;
+// }
 
-let user_1: Person;
+// let user_1: Person;
 
-user_1 = {
-  name: "Sido",
-  age: 28,
-  greet(message: string): void {
-    console.log(message);
-  },
-};
-user_1.greet("Hi there!");
+// user_1 = {
+//   name: "Sido",
+//   age: 28,
+//   greet(message: string): void {
+//     console.log(message);
+//   },
+// };
+// user_1.greet("Hi there!");
 
 interface Greetable {
   name: string;

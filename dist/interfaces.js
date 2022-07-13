@@ -1,13 +1,7 @@
 "use strict";
-let user_1;
-user_1 = {
-    name: "Sido",
-    age: 28,
-    greet(message) {
-        console.log(message);
-    },
-};
-user_1.greet("Hi there!");
+// interface Person {
+//   name: string;
+//   age: number;
 class Person {
     constructor(name, age) {
         this.name = name;
