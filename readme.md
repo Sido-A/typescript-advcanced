@@ -20,5 +20,6 @@
     - Partial
     - Readonly
 
-- Decorators (need to uncomment ts.config => "experimentalDecorators": true)
-    - 
+- Decorators 
+    - (need to uncomment ts.config => "experimentalDecorators": true)
+    
