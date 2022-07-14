@@ -46,3 +46,13 @@ textStorage.addItem("Sido");
 textStorage.addItem("Abe");
 console.log(textStorage);
 const numberStorage = new DataStorage();
+function createCourseGoal(title, desc, date) {
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.desc = desc;
+    courseGoal.completeUntil = date;
+    return courseGoal;
+}
+// Readonly
+const names = ["Sido", "Abe"];
+// names.push("new name"); you get  error here

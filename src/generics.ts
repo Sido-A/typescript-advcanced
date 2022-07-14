@@ -60,3 +60,25 @@ textStorage.addItem("Abe");
 console.log(textStorage);
 
 const numberStorage = new DataStorage<number>();
+
+///////////////////////////////
+/// Built in utility types  ///
+///////////////////////////////
+// Partial
+interface CourseGoal {
+  title: string;
+  desc: string;
+  completeUntil: Date;
+}
+
+function createCourseGoal(title: string, desc: string, date: Date): CourseGoal {
+  let courseGoal: Partial<CourseGoal> = {};
+  courseGoal.title = title;
+  courseGoal.desc = desc;
+  courseGoal.completeUntil = date;
+  return courseGoal as CourseGoal;
+}
+
+// Readonly
+const names: Readonly<string[]> = ["Sido", "Abe"];
+// names.push("new name"); you get  error here
